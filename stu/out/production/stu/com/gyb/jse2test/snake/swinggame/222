@@ -1,0 +1,28 @@
+package com.etc5.snake;
+
+import javax.swing.*;
+import java.net.URL;
+
+/**
+ * @author tangzhen
+ * @version 1.0
+ * @date 2023/12/12 13:58
+ */
+public class GameData {
+    //图片公共路径
+    public static final String PREV="com/etc5/snake/resources/";
+    //获取资源URL
+    public static URL bodyURL = GameData.class.getResource("/"+PREV+"body.jpg");
+    public static URL foodURL = GameData.class.getResource("/"+PREV+"food.jpg");
+    public static URL upURL = GameData.class.getResource("/"+PREV+"up.jpg");
+    public static URL downURL = GameData.class.getResource("/"+PREV+"down.jpg");
+    public static URL leftURL = GameData.class.getResource("/"+PREV+"left.jpg");
+    public static URL rightURL = GameData.class.getResource("/"+PREV+"right.jpg");
+
+    public static ImageIcon bodyImg = new ImageIcon(bodyURL);
+    public static ImageIcon foodImg = new ImageIcon(foodURL);
+    public static ImageIcon upImg = new ImageIcon(upURL);
+    public static ImageIcon downImg = new ImageIcon(downURL);
+    public static ImageIcon leftImg = new ImageIcon(leftURL);
+    public static ImageIcon rightImg = new ImageIcon(rightURL);
+}
